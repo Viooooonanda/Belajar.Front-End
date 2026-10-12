@@ -20,10 +20,10 @@
 
     <nav class="navigasi">
         <a href="#">Home</a>
-        <a href="#">Jadwal</a>
-        <a href="#">Materi</a>
+        <a href="#jadwal">Jadwal</a>
+        <a href="#materi">Materi</a>
         <a href="#">Profil</a>
-        <a href="#">Kontak</a>
+        <a href="#kontak">Kontak</a>
     </nav>
 
     <main>
@@ -60,16 +60,16 @@
                 </ul>
             </div>
 
-            <div class="box" >
+            <div class="box" id="materi">
                 <h3><strong>Materi dari pertemuan 1 - 7</strong></h3>
                 <ul>
-                    <li>Pertemuan 1: </li>
-                    <li>Pertemuan 2: </li>
-                    <li>Pertemuan 3: </li>
-                    <li>Pertemuan 4: </li>
-                    <li>Pertemuan 5: </li>
-                    <li>Pertemuan 6: </li>
-                    <li>Pertemuan 7: </li>
+                    <li>Pertemuan 1: Perkenalan Pemograman Antarmuka Pengguna</li>
+                    <li>Pertemuan 2: HTML CSS Lanjut</li>
+                    <li>Pertemuan 3: HTML Table CSS Multikolom</li>
+                    <li>Pertemuan 4: Form, Multimedia, dan Menu Pulldown pada Website</li>
+                    <li>Pertemuan 5: Form, Multimedia, dan Menu Pulldown pada Website</li>
+                    <li>Pertemuan 6: Tips & Trik Merancang Website dan Kickoff Proyek UTS</li>
+                    <li>Pertemuan 7: Bahas Proyek UTS</li>
                 </ul>
             </div>
 
@@ -80,5 +80,103 @@
             </div>
         </aside>
     </main>
+
+    <section class="schedule" id="jadwal">
+        <div class="tabel">
+            <h2>Jadwal Perkuliahan Semester 3 (2026)</h2>
+            <p>Berikut ini adalah jadwal kuliah anak Sistem Informasi angkatan 2025, kelas SI A</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kode</th>
+                        <th>Mata Kuliah</th>
+                        <th>sks</th>
+                        <th>Kelas</th>
+                        <th>Dosen Pengajar</th>
+                        <th>Ruang</th>
+                        <th>Waktu</th>
+                        <th>Kontak Dosen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SI23035</td>
+                        <td>PEMROGRAMAN ANTARMUKA PENGGUNA</td>
+                        <td>4</td>
+                        <td>A</td>
+                        <td>10823004 IRVAN LEWENUSA, S.Kom.,</td>
+                        <td>R1007</td>
+                        <td>SELASA(07:30 s/d 09:10 ) 
+                            SELASA(09:30 s/d 11:10 )</td>
+                        <td>irvanl@fti.untar.ac.id</td>
+                    </tr>
+                    <tr>
+                        <td>SI23034</td>
+                        <td>PEMROGRAMAN BERBASIS OBJEK</td>
+                        <td>4</td>
+                        <td>A</td>
+                        <td>10301015 LELY HIRYANTO, ST., M.Sc.,Ph.D.</td>
+                        <td>R0905</td>
+                        <td>SELASA(13:30 s/d 15:10 )
+                            SELASA(15:30 s/d 17:10 )</td>
+                        <td>lelyh@fti.untar.ac.id</td>
+                    </tr>
+                    <tr>
+                        <td>SI23037</td>
+                        <td>METODOLOGI PENELITIAN DAN ETIKA DIGITAL </td>
+                        <td>4</td>
+                        <td>A</td>
+                        <td>10805005 TONY, S.Kom., M.Kom., Ph. D.</td>
+                        <td>Ruang Seminar</td>
+                        <td>RABU(09:30 s/d 11:10 )
+                            RABU(11:30 s/d 13:10 )</td>
+                        <td>tony@fti.untar.ac.id</td>
+                    </tr>
+                    <tr>
+                        <td>SI23040</td>
+                        <td>ANALISIS DAN PERANCANGAN SISTEM INFORMASI </td>
+                        <td>4</td>
+                        <td>A</td>
+                        <td>10188013 ERY DEWAYANI, Dra., M.M.S.I.</td>
+                        <td>R0805</td>
+                        <td>KAMIS(09:30 s/d 11:10 )
+                            KAMIS(11:30 s/d 13:10 )</td>
+                        <td>eryd@fti.untar.ac.id</td>
+                    </tr>
+                    <tr>
+                        <td>SI23028</td>
+                        <td>JARINGAN KOMPUTER DAN KOMPUTASI AWAN</td>
+                        <td>4</td>
+                        <td>A</td>
+                        <td>10811001 RIFKY KURNIAWAN., S.Kom</td>
+                        <td>R0904</td>
+                        <td>JUMAT(09:30 s/d 11:10 )
+                            JUMAT(07:30 s/d 09:10 )</td>
+                        <td>rifkyk@fti.untar.ac.id</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="Kontak" id="kontak">
+        <div class="kontak-tengah">
+            <h2>Hubungi Kami</h2>
+            <div class="formulir">
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Nama">
+
+                    <input type="text" id="email" name="email" placeholder="Email">
+
+                    <textarea id="message" name="message" rows="4" placeholder="Tulis pesan disini"></textarea>
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+        </div>
+        <div class="call">
+            <img src="image/call.jpg" alt="contact us">
+        </div>
+    </section>
 </body>
 </html>

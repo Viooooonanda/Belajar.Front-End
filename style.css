@@ -60,9 +60,12 @@ header{
     align-items: center;
     flex-wrap: wrap;
     font-size: 20px;
-    gap: 25px;
-    padding: 8px;
+    padding: 8px ;
+    gap: 15px;
+    margin: 15px;
     background-color: #474f7b;
+    border-radius: 8px;
+    border: 1px solid #9090d0;
 }
 .navigasi a{
     text-decoration: none;
@@ -89,10 +92,11 @@ main{
     flex-direction: column;
     gap: 5px;
     margin-top: 10px;
+    margin: 15px;
 }
 .content-left h2{
     font-size: 25px;
-    color: #f4f4f6;
+    color: #ced4f6;
     padding-bottom: 6px;
     border-bottom: 2px solid #d0b5f4;
 }
@@ -102,6 +106,7 @@ main{
     gap: 20px;
     background-color: #3e3e6d;
     border-radius: 8px;
+    border: 1px solid #9090d0;
     padding: 15px;
     overflow: hidden;
     transition: background 0.3s ease;
@@ -128,29 +133,32 @@ main{
 }
 .content-left .col p{
     font-size: 15px;
-    color: #ced4f6;
+    color: #f4f4f6;
     margin-bottom: 10px;
 }
 
 .content-right {
-  flex: 1 1 0;
+  flex: 1 1 0; 
   min-width: 250px;
   display: flex;
   flex-direction: column;
   gap: 14px;
   margin-top: 10px;
+  margin: 15px;
 }
 .content-right .box {
   background: #3e3e6d;
   padding: 16px;
   border-radius: 8px;
+  border: 1px solid #9090d0;
 }
 .content-right .box:hover{
     background-color: #32296f;
 }
 .content-right h3 {
   font-size: 15px;
-  color: #f4f4f6;
+  color: #ced4f6;
+  font-weight: bold;
   padding-bottom: 6px;
   margin-bottom: 10px;
   border-bottom: 2px solid #d0b5f4;
@@ -158,13 +166,159 @@ main{
 .content-right p {
   font-size: 13px;
   margin-bottom: 8px;
+  color: #f4f4f6;
 }
 .content-right ul {
   list-style: none;
   margin-bottom: 8px;
 }
 .content-right li {
-  font-size: 13px;
+  font-size: 11px;
   margin-bottom: 8px;
+  color: #f4f4f6;
 }
 
+.schedule {
+    margin:20px 15px;
+    border-radius: 8px;
+    border: 1px solid #9090d0;
+}
+.schedule .tabel{
+    background: #3e3e6d;
+    padding: 16px;
+    border-radius: 8px;
+}
+.schedule .tabel:hover{
+    background-color: #32296f;
+}
+.schedule h2{
+    text-align: center;
+    color: #ced4f6;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d0b5f4;
+}
+.schedule p{
+    color: #e8e8f7;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+th, td {
+    border: 2px solid #a7adc9;
+    padding: 8px;
+    text-align: center;
+}
+th{
+    background-color: #201232;
+    color: #f4f4f6;
+    font-size: 11px;
+    font-weight: bold;
+}
+tr{
+    color: #f4f4f6;
+    font-size: 10px;
+}
+tr:nth-child(even){
+    background-color: #242949;
+}
+tr:hover{
+    background-color: #9090d0;
+}
+
+.Kontak {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 15px;
+    padding: 25px;
+    background-color: #3e3e6d;
+    border: 1px solid #9090d0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.Kontak:hover {
+    background-color: #32296f;
+}
+.Kontak .kontak-tengah {
+    flex: 3 1 0;
+    min-width: 0;
+}
+.Kontak h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f4f4f6;
+    margin: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #d0b5f4;
+}
+.Kontak .formulir {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    background-color: #f4f4fb;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 10px;
+}
+.Kontak .formulir input, .Kontak .formulir textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #3e3e6d;
+    background-color: #f4f4fb;
+    border: 2px solid #d0b5f4;
+    border-radius: 8px;
+    outline: none;
+}
+.Kontak .formulir input:focus, .Kontak .formulir textarea:focus {
+    border-color: #3e3e6d;
+}
+.Kontak .formulir textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.Kontak .formulir button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    margin-top: 15px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #474f7b;
+    color: #ced4f6;
+    border: 2px solid #d0b5f4;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.Kontak .formulir button:hover {
+    background-color: #be9cea;
+    color: #313652;
+}
+.Kontak .call {
+    flex: 2 1 0;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Kontak .call img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    max-height: 250px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
+}
